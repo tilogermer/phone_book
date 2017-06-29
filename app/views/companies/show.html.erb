@@ -16,7 +16,7 @@
 		<th>Phone number</th>
 	</tr>
 
-	<%= @company.employees.each do |employee| %>
+	<% @company.employees.each do |employee| %>
 	<tr>
 		<td><%= employee.last_name %></td>
 		<td><%= employee.first_name %></td>
