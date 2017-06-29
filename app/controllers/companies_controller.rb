@@ -5,14 +5,14 @@ class CompaniesController < ApplicationController
   # GET /companies.json
   def index
     @companies = Company.all
-    fresh_when last_modified; @companies.maximum(:updated_at)
+    
   end
 
   # GET /companies/1
   # GET /companies/1.json
   def show
     @company = Company.find(params[:id])
-    fresh_when last_modified: @company.updated_at
+    
   end
 
   # GET /companies/new
